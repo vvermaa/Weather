@@ -1,0 +1,127 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Glass card */
+.app-main {
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px;
+  width: 360px;
+  border-radius: 25px;
+  text-align: center;
+  color: #fff;
+
+  box-shadow: 
+    0 8px 32px rgba(0,0,0,0.25),
+    inset 0 0 10px rgba(255,255,255,0.2);
+}
+
+/* Search */
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#input-box {
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+}
+
+button {
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Weather UI */
+.weather-body {
+  display: none;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.temp {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.weather {
+  font-size: 20px;
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+
+.details {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.loading {
+  display: none;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.location h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.temp {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.weather {
+  font-size: 22px;
+  opacity: 0.9;
+}
+
+.icon i {
+  font-size: 60px;
+  margin: 15px 0;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.2);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 13px;
+}
